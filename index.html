@@ -1,350 +1,945 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivoham Divine - Elevating Mind, Body & Spirit</title>
+    <title>Shivoham Divine - Your Journey to Inner Harmony Through Yoga</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* Define custom brand colors using CSS variables for easy management */
-        :root {
-            --primary-color: #2A9D8F;   /* Vibrant Teal */
-            --secondary-color: #E9C46A; /* Sunny Yellow */
-            --accent-color: #F4F1DE;    /* Light Cream */
-            --text-dark: #264653;       /* Dark Blue-Green */
-            --text-light: #FFFFFF;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--accent-color);
-            color: var(--text-dark);
-        }
-        /* Use a more elegant font for headings */
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-        }
-        /* Custom button styles to match the brand */
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #248a7e;
-        }
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .btn-secondary:hover {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-        }
-        /* Styling for the FAQ accordion */
-        .faq-question.active .faq-answer {
-            max-height: 300px;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }img
-        .faq-question .faq-arrow {
-            transition: transform 0.3s ease;
-        }
-        .faq-question.active .faq-arrow {
-            transform: rotate(180deg);
-        }
-    </style>
-</head>
-<body style="background-color: var(--accent-color);">
-
-    <!-- Header & Navigation -->
-    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
-                <!-- Placeholder for the logo -->
-                <img src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877565/Logo_circular_xfkr6q.png" alt="Shivoham Divine Logo" class="h-10 w-10 rounded-full">
-                <span class="text-xl font-bold" style="color: var(--primary-color);">Shivoham Divine</span>
-            </a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-gray-900 transition">About</a>
-                <a href="#classes" class="text-gray-600 hover:text-gray-900 transition">Classes</a>
-                <a href="#booking-form" class="text-gray-600 hover:text-gray-900 transition">Book Trial</a>
-                <a href="#faq" class="text-gray-600 hover:text-gray-900 transition">FAQ</a>
-                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
-            </nav>
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#about" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
-            <a href="#classes" class="block py-2 text-gray-600 hover:text-gray-900">Classes</a>
-            <a href="#booking-form" class="block py-2 text-gray-600 hover:text-gray-900">Book Trial</a>
-            <a href="#faq" class="block py-2 text-gray-600 hover:text-gray-900">FAQ</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/dv0upuff8/image/upload/v1755877577/3yoga_juqwtp.jpg');">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10 px-4">
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Elevating Mind, Body & Spirit</h1>
-                <p class="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8">Discover holistic wellness and inner harmony through the ancient wisdom of yoga, guided by medical expertise.</p>
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#booking-form" class="btn-primary text-lg font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 w-full sm:w-auto">Book a Free Trial</a>
-                    <a href="https://yourpaymentgateway.com/shivoham-divine" target="_blank" class="text-lg font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 w-full sm:w-auto" style="border: 2px solid var(--accent-color); color: var(--accent-color); background-color: transparent;">Enroll Now</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/3">
-                        <img src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877563/shalu_e5szmm.jpg" alt="Dr. Shalini Jain" class="rounded-lg shadow-2xl w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x500/A5A58D/FFFFFF?text=Image+Not+Found';">
-                    </div>
-                    <div class="md:w-2/3">
-                        <h2 class="text-4xl font-bold mb-4" style="color: var(--primary-color);">Meet Dr. Shalini Jain</h2>
-                        <p class="leading-relaxed" style="color: var(--text-dark);">Dr. Shalini Jain brings together the precision of medical science and the depth of holistic wellness in her yoga journey. Holding a Bachelor of Dental Surgery (BDS) and a B.Sc. degree, she integrates her scientific understanding of the human body with the timeless wisdom of yoga.
-
-With over nine years of dedicated personal practice and more than two years of teaching experience, Dr. Shalini is an internationally certified yoga instructor and a registered with YACEP® (Yoga Alliance Continuing Education Provider), specializing in Face Yoga, Pre-natal, and Post-natal Yoga. Her strong medical background ensures that her classes are safe, effective, and accessible for practitioners at all levels.
-
-Loved for her warm, approachable, and mindful teaching style, she creates a nurturing space where students feel supported in their physical, mental, and emotional growth. Her classes are known for their personalized attention, thoughtful guidance, and focus on cultivating harmony of body and mind. Dr. Shalini’s genuine care and dedication have earned her the trust and affection of students worldwide, making her not just a teacher but also a compassionate guide on the path to holistic well-being</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Class Offerings Section -->
-        <section id="classes" class="py-20" style="background-color: var(--accent-color);">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold mb-2" style="color: var(--primary-color);">Our Classes</h2>
-                <p class="mb-12 max-w-2xl mx-auto" style="color: var(--text-dark);">Join our vibrant community online. We offer flexible batches to fit your schedule.</p>
-                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Weekday Batch Card -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-left transform hover:-translate-y-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold mb-4" style="color: var(--primary-color);">Weekday Batch</h3>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2" style="color: var(--primary-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 6:00 AM BST, Mon-Fri</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2" style="color: var(--primary-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> 45 min sessions</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2" style="color: var(--primary-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> Live on Zoom</li>
-                        </ul>
-                        <div class="text-3xl font-bold mt-6" style="color: var(--primary-color);">30 GBP / ₹1999 <span class="text-base font-normal text-gray-500">per month</span></div>
-                    </div>
-                    <!-- Weekend Batch Card -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-left transform hover:-translate-y-2 transition-transform duration-300">
-                        <h3 class="text-2xl font-bold mb-4" style="color: var(--primary-color);">Weekend Batch</h3>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2" style="color: var(--primary-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 6:00 AM BST, Sat-Sun</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2" style="color: var(--primary-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> 45 min sessions</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2" style="color: var(--primary-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> Live on Zoom</li>
-                        </ul>
-                        <div class="text-3xl font-bold mt-6" style="color: var(--primary-color);">15 GBP / ₹999 <span class="text-base font-normal text-gray-500">per month</span></div>
-                    </div>
-                </div>
-                <!-- Payment Options -->
-                <div class="mt-12">
-                    <h3 class="text-2xl font-bold mb-6">Ready to Join?</h3>
-                    <div class="flex flex-wrap justify-center gap-4">
-                        <a href="https://yourpaymentgateway.com/shivoham-divine" target="_blank" class="btn-primary font-semibold py-3 px-6 rounded-lg">Pay Now</a>
-                        <a href="#booking-form" class="btn-secondary font-semibold py-3 px-6 rounded-lg">Book via Google Form</a>
-                        <a href="https://wa.me/919119622503" target="_blank" class="btn-secondary font-semibold py-3 px-6 rounded-lg">Chat on WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Google Form Embed Section -->
-        <section id="booking-form" class="py-20 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold mb-8" style="color: var(--primary-color);">Book Your Free Trial</h2>
-                <p class="mb-12 max-w-2xl mx-auto" style="color: var(--text-dark);">Fill out the form below to schedule your complimentary trial class. We can't wait to meet you!</p>
-                <div class="max-w-3xl mx-auto rounded-lg shadow-2xl overflow-hidden">
-                    <!-- 
-                        How to get your Google Form embed link:
-                        1. Open your Google Form.
-                        2. Click the "Send" button in the top-right corner.
-                        3. Go to the "<>" (Embed HTML) tab.
-                        4. Copy the entire 'src' attribute value from the iframe code. It will look something like: "https://docs.google.com/forms/d/e/1FAIpQLSc.../viewform?embedded=true"
-                        5. Paste that link into the `src` attribute of the iframe below, replacing the placeholder.
-                    -->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmX96i9T7auk0tUaS1xBTVs2I3FXlut_ag0E8uO3sCeahKkw/viewform?embedded=true" width="640" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="py-20" style="background-color: var(--accent-color);">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold mb-12" style="color: var(--primary-color);">What Our Students Say</h2>
-                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Placeholder for video testimonials -->
-                    <div class="bg-gray-200 rounded-lg aspect-video flex items-center justify-center">
-                        <p class="text-gray-500">Video Testimonial 1</p>
-                        <!-- In a real application, you would use a <video> tag here -->
-                        <!-- <video controls src="review1.mp4" class="w-full h-full rounded-lg"></video> -->
-                    </div>
-                    <div class="bg-gray-200 rounded-lg aspect-video flex items-center justify-center">
-                        <p class="text-gray-500">Video Testimonial 2</p>
-                         <!-- <video controls src="review2.mp4" class="w-full h-full rounded-lg"></video> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Community Section -->
-        <section id="community" class="py-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop');">
-            <div class="container mx-auto px-6 text-center bg-black/60 py-12 rounded-xl">
-                 <h2 class="text-4xl font-bold mb-4 text-white">Join Our Community</h2>
-                 <p class="text-white/90 mb-8 max-w-2xl mx-auto">Connect with other NRI professionals, share your yoga journey, and stay motivated in our exclusive WhatsApp group.</p>
-                 <a href="https://chat.whatsapp.com/invite/community-link" target="_blank" class="btn-primary text-lg font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300">Join on WhatsApp</a>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="py-20 bg-white">
-            <div class="container mx-auto px-6 max-w-3xl">
-                <h2 class="text-4xl font-bold text-center mb-12" style="color: var(--primary-color);">Frequently Asked Questions</h2>
-                <div id="faq-accordion" class="space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div class="faq-question border-b border-gray-200 pb-4">
-                        <button class="w-full flex justify-between items-center text-left text-lg font-semibold">
-                            <span>Do I need prior yoga experience?</span>
-                            <svg class="faq-arrow w-5 h-5 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500 text-gray-600">
-                            No, our classes are beginner-friendly and suitable for all levels.
-                        </div>
-                    </div>
-                    <!-- FAQ Item 2 -->
-                    <div class="faq-question border-b border-gray-200 pb-4">
-                        <button class="w-full flex justify-between items-center text-left text-lg font-semibold">
-                            <span>What if I miss a class?</span>
-                            <svg class="faq-arrow w-5 h-5 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500 text-gray-600">
-                            You’ll get access to a class recording valid for 48 hours.
-                        </div>
-                    </div>
-                    <!-- FAQ Item 3 -->
-                    <div class="faq-question border-b border-gray-200 pb-4">
-                        <button class="w-full flex justify-between items-center text-left text-lg font-semibold">
-                            <span>How do I join online?</span>
-                            <svg class="faq-arrow w-5 h-5 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500 text-gray-600">
-                            Once enrolled, you’ll receive a Zoom link via email/WhatsApp.
-                        </div>
-                    </div>
-                    <!-- FAQ Item 4 -->
-                    <div class="faq-question border-b border-gray-200 pb-4">
-                        <button class="w-full flex justify-between items-center text-left text-lg font-semibold">
-                            <span>Do I need special equipment?</span>
-                            <svg class="faq-arrow w-5 h-5 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500 text-gray-600">
-                            Just a yoga mat. Comfortable clothing is recommended.
-                        </div>
-                    </div>
-                    <!-- FAQ Item 5 -->
-                    <div class="faq-question border-b border-gray-200 pb-4">
-                        <button class="w-full flex justify-between items-center text-left text-lg font-semibold">
-                            <span>What is the refund policy?</span>
-                            <svg class="faq-arrow w-5 h-5 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500 text-gray-600">
-                            Full refund if cancelled before class starts. No partial refunds for missed sessions.
-                        </div>
-                    </div>
-                    <!-- FAQ Item 6 -->
-                    <div class="faq-question border-b border-gray-200 pb-4">
-                        <button class="w-full flex justify-between items-center text-left text-lg font-semibold">
-                            <span>Are classes safe for medical conditions?</span>
-                            <svg class="faq-arrow w-5 h-5 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500 text-gray-600">
-                            Yes. With Dr. Shalini’s medical background, modifications are provided for different needs.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact" class="py-16 text-white" style="background-color: var(--primary-color);">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
-            <!-- Contact Info -->
-            <div>
-                <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
-                <p class="mb-6">Have questions? Reach out to us. We're happy to help!</p>
-                <div class="space-y-4">
-                    <a href="https://wa.me/919119622503" target="_blank" class="flex items-center space-x-3 hover:opacity-80 transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.846 6.067l-1.289 4.713 4.793-1.262z"/></svg>
-                        <span>Chat on WhatsApp</span>
-                    </a>
-                    <a href="mailto:shivohamdivine@gmail.com" class="flex items-center space-x-3 hover:opacity-80 transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                        <span>shivohamdivine@gmail.com</span>
-                    </a>
-                     <a href="#booking-form" class="flex items-center space-x-3 hover:opacity-80 transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-                        <span>Fill out our Form</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Newsletter -->
-            <div>
-                <h3 class="text-2xl font-bold mb-4">Stay Updated</h3>
-                <p class="mb-6">Subscribe for class updates and wellness tips.</p>
-                <form action="#" method="POST">
-                    <div class="flex">
-                        <input type="email" placeholder="Your email address" class="w-full px-4 py-3 rounded-l-lg text-gray-800 focus:outline-none" required>
-                        <button type="submit" class="font-semibold py-3 px-6 rounded-r-lg" style="background-color: var(--secondary-color); color: var(--text-dark);">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="text-center text-white/70 mt-12 border-t border-white/20 pt-8">
-            <p>&copy; 2024 Shivoham Divine. All Rights Reserved.</p>
-        </div>
-    </footer>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
-        // JavaScript for mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // JavaScript for FAQ accordion
-        const faqAccordion = document.getElementById('faq-accordion');
-        if (faqAccordion) {
-            const questions = faqAccordion.getElementsByClassName('faq-question');
-            for (let i = 0; i < questions.length; i++) {
-                questions[i].addEventListener('click', function() {
-                    // Close all other questions
-                    for (let j = 0; j < questions.length; j++) {
-                        if (questions[j] !== this) {
-                            questions[j].classList.remove('active');
-                        }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sage': '#9CAF88',
+                        'earth': '#8B7355',
+                        'sky': '#87CEEB',
+                        'sunset': '#F4A460',
+                        'deep-green': '#2F5233',
+                        'soft-cream': '#F5F5DC'
+                    },
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
                     }
-                    // Toggle the clicked question
-                    this.classList.toggle('active');
-                });
+                }
             }
         }
     </script>
+    <style>
+        .hero-bg {
+            /* Adjusted opacity for a brighter look */
+            background: linear-gradient(rgba(47, 82, 51, 0.2), rgba(139, 115, 85, 0.1)), url('https://res.cloudinary.com/dv0upuff8/image/upload/v1755877577/3yoga_juqwtp.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #2F5233, #8B7355);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(156, 175, 136, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(156, 175, 136, 0.8); }
+        }
+        .faq-answer {
+            transition: max-height 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="smooth-scroll bg-soft-cream text-gray-800">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center text-2xl font-serif font-bold gradient-text">
+                    <img src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877565/Logo_circular_xfkr6q.png" alt="Shivoham Divine Logo" class="h-10 w-10 mr-2">
+                    <span>Shivoham Divine</span>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <div class="space-x-8">
+                        <a href="#home" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">Home</a>
+                        <a href="#instructors" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">Instructors</a>
+                        <a href="#schedule" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">Schedule</a>
+                        <a href="blog.html" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">Blog</a>
+                        <a href="#testimonials" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">Testimonials</a>
+                        <a href="#faq" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">FAQ</a>
+                        <a href="#contact" class="nav-link text-deep-green hover:text-sage transition-colors duration-300">Contact</a>
+                    </div>
+                    <div class="flex space-x-4 pl-6 ml-6 border-l border-gray-300">
+                        <a href="https://www.facebook.com/profile.php?id=61551681835033" target="_blank" title="Follow us on Facebook" class="text-gray-600 hover:text-deep-green transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shalini.yogini/" target="_blank" title="Follow us on Instagram" class="text-gray-600 hover:text-deep-green transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://youtube.com/@shivoham_divine?si=10jaZnpHKSabX5m9" target="_blank" title="Subscribe on YouTube" class="text-gray-600 hover:text-deep-green transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-deep-green">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">Home</a>
+                <a href="#instructors" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">Instructors</a>
+                <a href="#schedule" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">Schedule</a>
+                <a href="blog.html" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">Blog</a>
+                <a href="#testimonials" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 text-deep-green hover:text-sage transition-colors duration-300">Contact</a>
+                <div class="flex justify-center space-x-6 pt-4 mt-4 border-t border-gray-200">
+                    <a href="https://www.facebook.com/profile.php?id=61551681835033" target="_blank" title="Follow us on Facebook" class="text-gray-600 hover:text-deep-green transition-transform duration-300 hover:scale-110">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shalini.yogini/" target="_blank" title="Follow us on Instagram" class="text-gray-600 hover:text-deep-green transition-transform duration-300 hover:scale-110">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://youtube.com/@shivoham_divine?si=10jaZnpHKSabX5m9" target="_blank" title="Subscribe on YouTube" class="text-gray-600 hover:text-deep-green transition-transform duration-300 hover:scale-110">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-white relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">
+                    Shivoham Divine
+                </h1>
+                <p class="text-xl md:text-2xl mb-4 text-soft-cream">
+                    Your Journey to Inner Harmony Through Yoga
+                </p>
+                <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+                    Experience the divine transformation through online yoga classes that bring peace, wellness, and harmony to your life
+                </p>
+                <!-- Updated button to link to WhatsApp -->
+                <button onclick="window.location.href='https://wa.me/919119622503?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20free%20trial%20class!'" class="bg-sage hover:bg-deep-green text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 pulse-glow floating">
+                    <i class="fas fa-play mr-2"></i>Book Your Free Trial Class!
+                </button>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-8 gradient-text">
+                    Welcome to Shivoham Divine
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-12">
+                    At Shivoham Divine, we believe that yoga is more than just physical exercise—it's a divine journey toward inner harmony, wellness, and spiritual awakening. Our online yoga classes bring the ancient wisdom of yoga directly to your home, making it convenient and accessible for everyone to experience the transformative power of this sacred practice.
+                </p>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-serif font-bold mb-6 text-deep-green">Why Choose Shivoham Divine?</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                                <span>Practice from the comfort of your own space</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                                <span>Flexible scheduling that fits your lifestyle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                                <span>Personalized attention from certified instructors</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-sage mr-3 mt-1"></i>
+                                <span>LIVE classes with supportive learning environment</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877563/riverside_tlnqyw.jpg" alt="Peaceful meditation in nature" class="rounded-lg shadow-xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deep-green/20 to-transparent rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Differentiators -->
+    <section class="py-20 bg-gradient-to-br from-sage/10 to-sky/10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 gradient-text">
+                    What Makes Us Special
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Discover the unique qualities that set Shivoham Divine apart in your yoga journey
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-sage text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-deep-green">Experienced & Internationally Certified Instructors</h3>
+                    <p class="text-gray-600">Learn from qualified professionals with years of experience and international certifications</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-earth/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-friends text-earth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-deep-green">LIVE classes with Personalised Attention</h3>
+                    <p class="text-gray-600">Receive individual guidance and modifications tailored to your unique needs and abilities</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-sky/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-sky text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-deep-green">Diverse Class Offerings</h3>
+                    <p class="text-gray-600">Choose from a wide variety of yoga styles and specialized programs for all levels</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-sunset/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-sunset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-4 text-deep-green">Flexible Scheduling & Affordable Plans</h3>
+                    <p class="text-gray-600">Convenient class times and budget-friendly pricing options to suit your lifestyle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Instructors Section -->
+    <section id="instructors" class="py-20 bg-gradient-to-br from-deep-green/5 to-sage/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 gradient-text">
+                    Meet Our Expert Instructors
+                </h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Our experienced and internationally certified instructors bring years of expertise and a deep understanding of yoga philosophy to guide you on your transformative journey.
+                </p>
+            </div>
+            <!-- Changed grid to single column and increased max-width for better bio display -->
+            <div class="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
+                <!-- Dr. Shalini Jain -->
+                <div class="bg-white rounded-xl p-8 shadow-xl card-hover fade-in flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gradient-to-br from-sage to-deep-green rounded-lg flex items-center justify-center overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                        <img id="instructor-shalini-img" src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877563/shalu_e5szmm.jpg" alt="Dr. Shalini Jain" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center md:text-left flex-grow">
+                        <h3 class="text-2xl font-serif font-bold text-deep-green mb-2">Dr. Shalini Jain</h3>
+                        <p class="text-sage font-semibold mb-4">Lead Instructor & Founder</p>
+                        <div class="bg-sage/10 rounded-lg p-6">
+                            <p class="text-gray-700 italic mb-4">
+                                "Dr. Shalini Jain brings together the precision of medical science and the depth of holistic wellness in her yoga journey. Holding a Bachelor of Dental Surgery (BDS) and a B.Sc. degree, she integrates her scientific understanding of the human body with the timeless wisdom of yoga. With over nine years of dedicated personal practice and more than two years of teaching experience, Dr. Shalini is an internationally certified yoga instructor and a registered with YACEP® (Yoga Alliance Continuing Education Provider), specializing in Face Yoga, Pre-natal, and Post-natal Yoga. Her strong medical background ensures that her classes are safe, effective, and accessible for practitioners at all levels. Loved for her warm, approachable, and mindful teaching style, she creates a nurturing space where students feel supported in their physical, mental, and emotional growth. Her classes are known for their personalized attention, thoughtful guidance, and focus on cultivating harmony of body and mind. Dr. Shalini’s genuine care and dedication have earned her the trust and affection of students worldwide, making her not just a teacher but also a compassionate guide on the path to holistic well-being"
+                            </p>
+                            <div class="flex justify-center md:justify-start space-x-4 text-sage">
+                                <i class="fas fa-certificate" title="Internationally Certified"></i>
+                                <i class="fas fa-graduation-cap" title="Advanced Training"></i>
+                                <i class="fas fa-heart" title="Compassionate Teaching"></i>
+                            </div>
+                            <!-- Hidden Upload/Save buttons for instructor images -->
+                            <div class="mt-4 hidden">
+                                <input type="file" id="upload-shalini" accept="image/*">
+                                <label for="upload-shalini" class="bg-deep-green hover:bg-deep-green/80 text-white px-4 py-2 rounded-lg text-sm cursor-pointer transition-colors duration-300">Upload Image</label>
+                                <button id="save-shalini" class="bg-sage hover:bg-sage/80 text-white px-4 py-2 rounded-lg text-sm ml-2">Save Image</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mrs. Kamlesh Jain -->
+                <div class="bg-white rounded-xl p-8 shadow-xl card-hover fade-in flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gradient-to-br from-sky to-earth rounded-lg flex items-center justify-center overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                        <img id="instructor-kamlesh-img" src="https://placehold.co/160x160/8B7355/F5F5DC?text=Kamlesh" alt="Mrs. Kamlesh Jain" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center md:text-left flex-grow">
+                        <h3 class="text-2xl font-serif font-bold text-deep-green mb-2">Mrs. Kamlesh Jain</h3>
+                        <p class="text-earth font-semibold mb-4">Senior Instructor</p>
+                        <div class="bg-earth/10 rounded-lg p-6">
+                            <p class="text-gray-700 italic mb-4">
+                                "Mrs. Kamlesh Jain is a certified yoga instructor with rich experience in training not only students but also yoga teachers, having mentored many who are now successful instructors themselves. She holds Master’s degrees in Sanskrit and Hindi, which add depth to her understanding of yogic philosophy and traditional practices.
+                                She specializes in teaching yoga to seniors, offering gentle yet effective practices to improve flexibility, mobility, and overall wellness. A dedicated practitioner, Mrs. Kamlesh is also an expert in Arham Dhyan Yoga, a unique method that integrates mantras with yoga asanas, promoting deep relaxation and spiritual harmony.
+                                Her compassionate approach and profound knowledge make her sessions deeply transformative and highly cherished by her students."
+                            </p>
+                            <div class="flex justify-center md:justify-start space-x-4 text-earth">
+                                <i class="fas fa-certificate" title="Internationally Certified"></i>
+                                <i class="fas fa-users" title="Community Builder"></i>
+                                <i class="fas fa-lotus" title="Mindful Practice"></i>
+                            </div>
+                            <!-- Hidden Upload/Save buttons for instructor images -->
+                            <div class="mt-4 hidden">
+                                <input type="file" id="upload-kamlesh" accept="image/*">
+                                <label for="upload-kamlesh" class="bg-deep-green hover:bg-deep-green/80 text-white px-4 py-2 rounded-lg text-sm cursor-pointer transition-colors duration-300">Upload Image</label>
+                                <button id="save-kamlesh" class="bg-sage hover:bg-sage/80 text-white px-4 py-2 rounded-lg text-sm ml-2">Save Image</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deepak Jain (NEW INSTRUCTOR) -->
+                <div class="bg-white rounded-xl p-8 shadow-xl card-hover fade-in flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-40 h-40 bg-gradient-to-br from-sunset to-sage rounded-lg flex items-center justify-center overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                        <img id="instructor-deepak-img" src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877567/dj_mkfrrm.jpg" alt="Deepak Jain" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center md:text-left flex-grow">
+                        <h3 class="text-2xl font-serif font-bold text-deep-green mb-2">Deepak Jain</h3>
+                        <p class="text-sunset font-semibold mb-4">Meditation Instructor and Co-founder</p>
+                        <div class="bg-sunset/10 rounded-lg p-6">
+                            <p class="text-gray-700 italic mb-4">
+                                "Deepak Jain brings a rare fusion of engineering precision and spiritual mastery to the world of online yoga instruction. An internationally certified yoga instructor with over a decade of immersive practice, he has journeyed deep into transformative meditation traditions including Vipassana and Kriya Yoga.
+                                What sets Deepak apart is his profound understanding of Ashtanga Yoga's philosophical foundations – the sacred 8 Limbs that form yoga's complete path. His engineering mind, shaped by degrees in Aeronautical and Mechanical Engineering, brings systematic clarity to ancient teachings, making complex spiritual concepts accessible and practical for modern practitioners.
+                                Beyond the mat, Deepak's expertise in Vedic Astrology adds a cosmic dimension to his holistic approach to wellness. His distinguished career as an Assistant Professor and Group A Scientist reflects his natural gift for teaching and his methodical approach to transformation. Experience the perfect blend of timeless wisdom and contemporary insight with a teacher who truly understands both the science and soul of yoga."
+                            </p>
+                            <div class="flex justify-center md:justify-start space-x-4 text-sunset">
+                                <i class="fas fa-certificate" title="Certified Instructor"></i>
+                                <i class="fas fa-spa" title="Holistic Wellness"></i>
+                                <i class="fas fa-hand-holding-heart" title="Supportive Teaching"></i>
+                            </div>
+                            <!-- Hidden Upload/Save buttons for instructor images -->
+                            <div class="mt-4 hidden">
+                                <input type="file" id="upload-deepak" accept="image/*">
+                                <label for="upload-deepak" class="bg-deep-green hover:bg-deep-green/80 text-white px-4 py-2 rounded-lg text-sm cursor-pointer transition-colors duration-300">Upload Image</label>
+                                <button id="save-deepak" class="bg-sage hover:bg-sage/80 text-white px-4 py-2 rounded-lg text-sm ml-2">Save Image</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Instructor Credibility -->
+            <div class="text-center mt-16 fade-in">
+                <div class="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-deep-green">Our Commitment to Excellence</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-award text-sage text-3xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-deep-green">Experienced Instructors</h4>
+                                <p class="text-gray-600 text-sm">Years of dedicated practice and teaching</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-globe text-earth text-3xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-deep-green">Internationally Certified</h4>
+                                <p class="text-gray-600 text-sm">Recognized qualifications and credentials</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Schedule Section -->
+    <section id="schedule" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 gradient-text">
+                    Class Schedule
+                </h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+                    Choose from our flexible schedule options. All times automatically adjust to your local timezone.
+                </p>
+                <!-- Timezone Converter -->
+                <div class="bg-gradient-to-r from-sage/10 to-sky/10 rounded-xl p-6 max-w-md mx-auto mb-8">
+                    <label for="timezone-select" class="text-lg font-semibold text-deep-green mb-4 block">
+                        <i class="fas fa-clock mr-2"></i>Select Your Timezone
+                    </label>
+                    <select id="timezone-select" class="w-full p-3 border border-sage/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage">
+                        <optgroup label="Indian Timezone">
+                            <option value="Asia/Kolkata">IST (India Standard Time)</option>
+                        </optgroup>
+                        <optgroup label="European Timezones">
+                            <option value="Europe/London">London (GMT/BST)</option>
+                            <option value="Europe/Paris">Paris (CET/CEST)</option>
+                            <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+                        </optgroup>
+                        <optgroup label="US Timezones">
+                            <option value="America/New_York">New York (EST/EDT)</option>
+                            <option value="America/Chicago">Chicago (CST/CDT)</option>
+                            <option value="America/Denver">Denver (MST/MDT)</option>
+                            <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Weekday Classes Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg fade-in card-hover flex flex-col">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-deep-green">Ashtanga/Vinyasa (Weekdays)</h3>
+                        </div>
+                        <div class="space-y-4 text-gray-700 flex-grow">
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sage">🧘‍♀️</span><span>Mon - Fri</span></p>
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sage">⏰</span><span class="schedule-time" data-time-ist = 4:45 AM (IST)></span></p>
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sage">💻</span><span>Live on Zoom</span></p>
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sage">💲</span><span>30 GBP / ₹1999 per month</span></p>
+                        </div>
+                        <div class="text-center mt-8">
+                            <button onclick="window.location.href='https://wa.me/919119622503?text=Hi%2C%20I%27m%20interested%20in%20the%20Weekday%20Batch!'" class="w-full bg-deep-green hover:bg-sage text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                                Book a Free Trial
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Weekend Batch Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg fade-in card-hover flex flex-col">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-deep-green">Yoga for Busy Professionals (Weekend)</h3>
+                        </div>
+                        <div class="space-y-4 text-gray-700 flex-grow">
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sky">🧘‍♀️</span><span>Sat & Sun</span></p>
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sky">⏰</span><span class="schedule-time" data-time-ist= 6:00 AM IST></span></p>
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sky">💻</span><span>Live on Zoom</span></p>
+                            <p class="flex items-center"><span class="w-6 text-center mr-3 text-sky">💲</span><span>15 GBP / ₹999 per month</span></p>
+                        </div>
+                        <div class="text-center mt-8">
+                             <button onclick="window.location.href='https://wa.me/919119622503?text=Hi%2C%20I%27m%20interested%20in%20the%20Weekend%20Batch!'" class="w-full bg-deep-green hover:bg-sage text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                                Book a Free Trial
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pranayama & Meditation Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg fade-in card-hover flex flex-col">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-deep-green">Pranayama & Meditation</h3>
+                        </div>
+                        <div class="space-y-4 text-gray-700 flex-grow">
+                           <p class="flex items-center"><span class="w-6 text-center mr-3 text-earth">🧘‍♀️</span><span>Mon - Fri</span></p>
+                           <p class="flex items-center"><span class="w-6 text-center mr-3 text-earth">⏰</span><span class="schedule-time" data-time-ist= 0:30 AM IST></span></p>
+                           <p class="flex items-center"><span class="w-6 text-center mr-3 text-earth">💻</span><span>Live on Zoom</span></p>
+                           <p class="flex items-center"><span class="w-6 text-center mr-3 text-earth">💲</span><span>15 GBP / ₹999 per month</span></p>
+                        </div>
+                        <div class="text-center mt-8">
+                             <button onclick="window.location.href='https://wa.me/919119622503?text=Hi%2C%20I%27m%20interested%20in%20Pranayama%20&%20Meditation!'" class="w-full bg-deep-green hover:bg-sage text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                                Book a Free Trial
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 gradient-text">
+                    What Our Students Say
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Hear from our community of practitioners about their transformative journey with Shivoham Divine
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-br from-sage/10 to-white rounded-xl p-8 shadow-lg card-hover fade-in">
+                    <div class="text-center mb-6">
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                            <img id="client-1-img" src="https://placehold.co/96x96/9CAF88/2F5233?text=Client1" alt="Client 1" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold text-deep-green">Priya Sharma</h3>
+                        <p class="text-gray-500 text-sm">Mumbai, India</p>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Joining Shivoham Divine has been a truly transformative experience. The instructors are incredibly knowledgeable and supportive, and the online classes fit perfectly into my busy schedule. I feel more peaceful and energized!"
+                    </p>
+                    <div class="flex justify-center text-yellow-500">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <!-- Hidden Upload/Save buttons for client images -->
+                    <div class="mt-4 hidden">
+                        <input type="file" id="upload-client-1" accept="image/*">
+                        <label for="upload-client-1" class="bg-sage hover:bg-sage/80 text-white px-3 py-1 rounded-lg text-xs cursor-pointer transition-colors duration-300">Upload Photo</label>
+                        <button id="save-client-1" class="bg-deep-green hover:bg-deep-green/80 text-white px-3 py-1 rounded-lg text-xs ml-2">Save Photo</button>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-br from-sky/10 to-white rounded-xl p-8 shadow-lg card-hover fade-in">
+                    <div class="text-center mb-6">
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                            <img id="client-2-img" src="https://placehold.co/96x96/87CEEB/2F5233?text=Client2" alt="Client 2" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold text-deep-green">David Lee</h3>
+                        <p class="text-gray-500 text-sm">New York, USA</p>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "I was skeptical about online yoga, but Shivoham Divine proved me wrong. The live classes offer personalized attention, and I've seen significant improvement in my flexibility and strength. Highly recommend!"
+                    </p>
+                    <div class="flex justify-center text-yellow-500">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <!-- Hidden Upload/Save buttons for client images -->
+                    <div class="mt-4 hidden">
+                        <input type="file" id="upload-client-2" accept="image/*">
+                        <label for="upload-client-2" class="bg-sage hover:bg-sage/80 text-white px-3 py-1 rounded-lg text-xs cursor-pointer transition-colors duration-300">Upload Photo</label>
+                        <button id="save-client-2" class="bg-deep-green hover:bg-deep-green/80 text-white px-3 py-1 rounded-lg text-xs ml-2">Save Photo</button>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gradient-to-br from-sunset/10 to-white rounded-xl p-8 shadow-lg card-hover fade-in">
+                    <div class="text-center mb-6">
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                            <img id="client-3-img" src="https://placehold.co/96x96/F4A460/2F5233?text=Client3" alt="Client 3" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold text-deep-green">Aisha Khan</h3>
+                        <p class="text-gray-500 text-sm">Dubai, UAE</p>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "The Pranayama and Meditation classes have transformed my daily routine. I feel calmer and more focused throughout the day. Shivoham Divine truly helps you connect with your inner self."
+                    </p>
+                    <div class="flex justify-center text-yellow-500">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <!-- Hidden Upload/Save buttons for client images -->
+                    <div class="mt-4 hidden">
+                        <input type="file" id="upload-client-3" accept="image/*">
+                        <label for="upload-client-3" class="bg-sage hover:bg-sage/80 text-white px-3 py-1 rounded-lg text-xs cursor-pointer transition-colors duration-300">Upload Photo</label>
+                        <button id="save-client-3" class="bg-deep-green hover:bg-deep-green/80 text-white px-3 py-1 rounded-lg text-xs ml-2">Save Photo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gradient-to-br from-sage/5 to-sky/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 gradient-text">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-6">
+                        <span class="text-lg font-semibold text-deep-green">Do I need prior yoga experience?</span>
+                        <i class="fas fa-plus text-sage"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 text-gray-700">
+                        <p>Not at all! Our classes are designed for all levels, from absolute beginners to experienced practitioners. Our instructors provide personalized guidance and modifications to ensure everyone feels comfortable and supported.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-6">
+                        <span class="text-lg font-semibold text-deep-green">Will these be recorded sessions or live?</span>
+                        <i class="fas fa-plus text-sage"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 text-gray-700">
+                        <p>All our sessions are conducted live on a virtual platform. This allows our instructors to provide real-time feedback, personalized attention, and maintain a supportive group energy, just like in an in-person class.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-6">
+                        <span class="text-lg font-semibold text-deep-green">How do I join online?</span>
+                        <i class="fas fa-plus text-sage"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 text-gray-700">
+                        <p>Joining is simple! Just contact us via the "Register Now" button or WhatsApp to sign up. Once you're registered, you will receive a link to join the live class on our virtual platform before each session.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-6">
+                        <span class="text-lg font-semibold text-deep-green">Do I need special equipment?</span>
+                        <i class="fas fa-plus text-sage"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 text-gray-700">
+                        <p>You don't need much to get started. We recommend having a yoga mat, comfortable clothing, and a quiet space where you can practice without distractions. Any other specific requirements will be communicated to you upon registration.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-6">
+                        <span class="text-lg font-semibold text-deep-green">What is the refund policy?</span>
+                        <i class="fas fa-plus text-sage"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 text-gray-700">
+                        <p>For detailed information about our refund policy, please get in touch with us directly through our contact channels. We'll be happy to provide you with all the necessary details.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="faq-question w-full flex justify-between items-center text-left p-6">
+                        <span class="text-lg font-semibold text-deep-green">Are classes safe for medical conditions?</span>
+                        <i class="fas fa-plus text-sage"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 text-gray-700">
+                        <p>Our lead instructor has a medical background, ensuring a strong focus on safety. However, we always recommend consulting with your doctor before starting any new exercise program, especially if you have a pre-existing medical condition. Please inform your instructor about any health concerns before the class begins so they can provide safe and appropriate modifications for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Registration Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-deep-green/10 to-sage/10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 gradient-text">
+                    Start Your Journey Today
+                </h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Ready to begin your transformative yoga journey? Get in touch with us to register for classes or ask any questions you may have.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Information -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-serif font-bold mb-8 text-deep-green">Get In Touch</h3>
+                    
+                    <!-- Quick Action Buttons -->
+                    <div class="space-y-4 mb-8">
+                        <button onclick="window.location.href='https://wa.me/919119622503?text=Hi%2C%20I%27m%20interested%20in%20registering%20for%20classes!'" class="w-full bg-sage hover:bg-deep-green text-white py-4 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                            <i class="fas fa-user-plus mr-3"></i>Register Now
+                        </button>
+                        <a href="https://wa.me/919119622503" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-3"></i>Chat on WhatsApp
+                        </a>
+                        <a href="https://chat.whatsapp.com/Jod7svPV7lBI0C0EGoSmNj" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-3"></i>Join our Community
+                        </a>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h4 class="text-xl font-semibold text-deep-green mb-4">Contact Information</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-sage mr-3"></i>
+                                <span class="text-gray-700">+91 91196 22503</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-sage mr-3"></i>
+                                <span class="text-gray-700">shivohamdivine@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-sage mr-3"></i>
+                                <span class="text-gray-700">Available 7 days a week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-serif font-bold mb-8 text-deep-green">Send Us a Message</h3>
+                    <form id="contact-form" action="https://formspree.io/f/mgvlwkyv" method="POST" class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-deep-green font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-sage/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage" placeholder="Your full name" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-deep-green font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-sage/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="whatsapp" class="block text-deep-green font-semibold mb-2">WhatsApp Number</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" class="w-full p-3 border border-sage/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage" placeholder="+1 (555) 123-4567" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-deep-green font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-sage/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage" placeholder="Tell us about your yoga goals and any questions you have..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sage hover:bg-deep-green text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                        <p id="form-status" class="mt-4 text-center"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-green text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center text-2xl font-serif font-bold mb-4">
+                         <img src="https://res.cloudinary.com/dv0upuff8/image/upload/v1755877565/Logo_circular_xfkr6q.png" alt="Shivoham Divine Logo" class="h-10 w-10 mr-2">
+                        <span>Shivoham Divine</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Your journey to inner harmony through yoga. Experience the divine transformation with our online yoga classes.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61551681835033" target="_blank" title="Follow us on Facebook" class="text-sage hover:text-white text-2xl transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shalini.yogini/" target="_blank" title="Follow us on Instagram" class="text-sage hover:text-white text-2xl transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@shivoham_divine?si=10jaZnpHKSabX5m9" target="_blank" title="Subscribe on YouTube" class="text-sage hover:text-white text-2xl transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919119622503" target="_blank" title="Chat on WhatsApp" class="text-sage hover:text-white text-2xl transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-sage transition-colors duration-300">Home</a></li>
+                        <li><a href="#instructors" class="text-gray-300 hover:text-sage transition-colors duration-300">Instructors</a></li>
+                        <li><a href="#schedule" class="text-gray-300 hover:text-sage transition-colors duration-300">Schedule</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-sage transition-colors duration-300">Blog</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-sage transition-colors duration-300">Testimonials</a></li>
+                         <li><a href="#faq" class="text-gray-300 hover:text-sage transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-sage transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>+91 91196 22503</p>
+                        <p><i class="fas fa-envelope mr-2"></i>shivohamdivine@gmail.com</p>
+                        <p><i class="fas fa-clock mr-2"></i>Available 7 days a week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-sage/30 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Shivoham Divine. All rights reserved. | Designed with ❤️ for your wellness journey</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/90');
+            } else {
+                navbar.classList.add('bg-white/90');
+                navbar.classList.remove('bg-white/95');
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqAnswer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                faqAnswer.classList.toggle('hidden');
+                
+                if (faqAnswer.classList.contains('hidden')) {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                } else {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+            });
+        });
+
+        // Timezone Converter Logic
+        const timezoneSelect = document.getElementById('timezone-select');
+        const scheduleTimeElements = document.querySelectorAll('.schedule-time');
+
+        function convertAndDisplayTimes() {
+            const targetTimezone = timezoneSelect.value;
+
+            scheduleTimeElements.forEach(el => {
+                const timeBST = el.getAttribute('data-time-bst');
+                const timeIST = el.getAttribute('data-time-ist');
+                
+                let baseTime, baseTimezone;
+
+                if (timeBST) {
+                    baseTime = timeBST;
+                    baseTimezone = 'Europe/London';
+                } else if (timeIST) {
+                    baseTime = timeIST;
+                    baseTimezone = 'Asia/Kolkata';
+                } else {
+                    return; 
+                }
+
+                const [hours, minutes] = baseTime.split(':');
+                
+                const date = new Date(); 
+                const tempDate = new Date(date.toLocaleString('en-US', { timeZone: baseTimezone }));
+                const tempTime = tempDate.getTime();
+                const offset = tempDate.getTimezoneOffset() * 60000;
+                
+                const utcDate = new Date(tempTime + offset);
+                utcDate.setUTCHours(hours, minutes, 0, 0);
+
+                const timeInTargetTimezone = new Intl.DateTimeFormat('en-US', {
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    hour12: true,
+                    timeZone: targetTimezone,
+                    timeZoneName: 'short'
+                }).format(utcDate);
+
+                el.textContent = timeInTargetTimezone;
+            });
+        }
+        
+        timezoneSelect.addEventListener('change', convertAndDisplayTimes);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                const availableTimezones = Array.from(timezoneSelect.options).map(opt => opt.value);
+                if (availableTimezones.includes(userTimezone)) {
+                    timezoneSelect.value = userTimezone;
+                } else {
+                    timezoneSelect.value = 'Asia/Kolkata';
+                }
+            } catch (e) {
+                timezoneSelect.value = 'Asia/Kolkata';
+            }
+            convertAndDisplayTimes();
+        });
+
+        // Formspree Contact Form
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.textContent = "Thank you! Your message has been sent.";
+                    status.className = 'mt-4 text-center text-green-700';
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.textContent = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.textContent = "Oops! There was a problem submitting your form"
+                        }
+                         status.className = 'mt-4 text-center text-red-700';
+                    })
+                }
+            }).catch(error => {
+                status.textContent = "Oops! There was a problem submitting your form"
+                status.className = 'mt-4 text-center text-red-700';
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+        
+    </script>
 </body>
 </html>
-
